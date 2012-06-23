@@ -1,0 +1,20 @@
+
+body {
+  body { 
+  background-image: url(/'images/background.jpg');
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: medium;
+  }
+  p{
+  	padding-left: 10px;
+  	color: white; 
+  }
+  
+
+  
+/* To lay this thing out correctly, I think it should be grouped into larger divs…then the smaller divs take up a % of larger divs*/
+
+}

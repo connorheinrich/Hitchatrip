@@ -1,0 +1,22 @@
+<html>
+<body>
+<div class="ride show">
+  <h2>Show Rides</h2>
+
+  <table summary="Ride detail view">
+  	<% @rides.each do |ride| %>
+    <tr>
+      <th>Origin</th>
+      <td><%= ride.Origin %></td>
+    </tr>
+    <tr>
+      <th>Destination</th>
+      <td><%= ride.Destination%></td>
+    </tr>
+ <%end%>
+  </table>
+  </div>
+</body>
+
+</html>
+    

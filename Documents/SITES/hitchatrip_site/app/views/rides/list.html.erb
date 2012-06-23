@@ -1,0 +1,43 @@
+<html>
+
+<body>
+	<div class="table">
+	  <%= form_for(:ride, :url => {:action => 'create'}) do |f| %>
+    <table summary="Ride detail view">
+    	<tr>
+    		<th>Origin</th>
+    		<td><%= f.text_field(:Origin) %></td>       
+    	</tr>
+    	<tr>
+      		<th>Destination</th>
+     	 	<td><%= f.text_field(:Destination) %></td>  
+    	</tr>
+ 
+  </table>
+  <div class = "btn btn-primary btn-small">
+  <%=submit_tag("submit")%>
+
+  </div>
+
+  
+</div>
+<%end%>
+
+
+  <table summary="Ride detail view">
+  	<% @rides.each do |ride| %>
+    <tr>
+      <th>Origin</th>
+      <td><%= ride.Origin %></td>
+    </tr>
+    <tr>
+      <th>Destination</th>
+      <td><%= ride.Destination%></td>
+    </tr>
+ <%end%>
+  </table>
+</div>
+</body>
+
+</html>
+    
